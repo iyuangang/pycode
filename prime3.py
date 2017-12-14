@@ -1,9 +1,9 @@
 import math
 
-def sushu(start,end):
+def prime(start,end):
     count=0
     for i in range(start,end+1):
-        if(i%2 == 0 and i != 2): 
+        if(i%2 == 0 and i != 2):
             continue
         for j in range(2,int(math.sqrt(i))+1):
             if(i%j==0):
@@ -15,8 +15,8 @@ def sushu(start,end):
     print('count',count)
     return
 
-#start=int(input("start:\n"))
-#end=int(input("end:\n"))
-#sushu(start,end)
+start=int(input("start:\n"))
+end=int(input("end:\n"))
+prime(start,end)
 
-sushu(1,1000)
+#prime(1,1000)
