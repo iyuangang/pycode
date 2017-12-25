@@ -12,7 +12,7 @@ while guess!=number and tries<6:
         print "TOO LARGE, YOU HAVE",5-tries,"CHANCE"
     tries = tries+1
 if guess ==number:
-    print "WELL DONE, BABY!"
+    print "WELL DONE, CONGRATULATIONS!"
 else:
-    print "FAIL! LOSER"
-    print "THE NUMBER WAS", number
+    print "FAIL! HAHAHA"
+    print "THE NUMBER IS", number
