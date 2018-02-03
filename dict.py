@@ -47,6 +47,8 @@ def processLine(line, wordCounts):
     line = replacePunctuations(line)
     words = line.split() 
     for word in words:
+        if word in "the and of to a in i it is that as not for was or with which but my he be his they on by are have at this if had from their one all we so when were there its an who some me them you":
+            wordCounts[word] = 0
         if word in wordCounts:
             wordCounts[word] += 1
         else:
