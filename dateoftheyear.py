@@ -10,7 +10,7 @@ while tries > 0:
     if month > 12 or month < 1:
         print'Invaild input'
         month = int(input('Input month: '))
-    elif day > 32 or day < 1:
+    elif day > 31 or day < 1:
         print'Invaild input'
         day = int(input('Input day: '))
     tries = tries - 1
