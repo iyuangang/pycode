@@ -14,25 +14,25 @@ while tries > 0:
         print'Invaild input'
         day = int(input('Input day: '))
     tries = tries - 1
-if year%4 == 0:
-    days = 29
-    yee = 'leap'
-    if year%100 == 0:
-        days = 28
-        yee = 'common'
-        if year%400 ==0:
-            days = 29
-            yee = 'leap'
-        else:
-            days = 28
-            yee = 'common'
-    else:
+    if year%4 == 0:
         days = 29
         yee = 'leap'
-else:
-    days = 28
-    yee = 'common'
-print year, 'year is',yee,'Feb has', days, 'days'
+        if year%100 == 0:
+            days = 2
+            yee = 'common'
+            if year%400 == 0:
+                days = 29
+                yee = 'leap'
+            else:
+                days = 28
+                yee = 'common'
+        else:
+            days = 29
+            yee = 'leap'
+    else:
+        days = 28
+        yee = 'common'
+print year, 'year is',yee, 'Feb has', days,'days'
 if month <= 1:
     total = day
 elif month == 2:

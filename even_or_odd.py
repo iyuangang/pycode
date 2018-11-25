@@ -1,7 +1,7 @@
 #!/usr/bin/python
  
 numbers = [12,5,4,33,5,66,7,47,311]
-even =[]
+even = []
 odd = []
 while len(numbers) > 0 :
     number = numbers.pop()
