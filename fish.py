@@ -13,7 +13,7 @@ class Goldfish(Fish):
  
 class Shark(Fish):
     def __init__(self):
-        Fish.__init__(self)                  #__init__后面跟的参数要与父类__init__后面的参数一致
+        Fish.__init__(self)               #__init__后面跟的参数要与父类__init__后面的参数一致
         self.hungry = True
     def eat(self):
         if self.hungry == True:
