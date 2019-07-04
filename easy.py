@@ -1,2 +1,2 @@
 import easygui
-easygui.msgbox
+easygui.msgbox('hi')
